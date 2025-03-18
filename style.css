@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Formula1-Bold';
+    src: url('Formula1-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Formula1-Regular';
+    src: url('Formula1-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Formula1-Wide';
+    src: url('Formula1-Wide.ttf') format('truetype');
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.kaos{
+    font-family: 'Formula1-Bold';
+    font-size: 6px;
+	display:flex;
+	margin:6px 0 -10px 0;
+}
+
+.judul{
+	border-top: 10px solid black;
+	border-right: 10px solid black;
+	border-radius: 0 30px 0 0;
+	width:100%;
+	height:100px;
+	margin:0 0 20px 0;
+}
+.judul h2{
+text-align:left;
+    font-family: 'Formula1-Bold';
+	font-weight:bold;
+	margin-top:6px;
+}
+.subjudul{
+background:#f1f1f1;
+padding:30px 20px;
+width:100%;
+border-radius:8px;
+}
+
+.subjudul p{
+    font-family: 'Formula1-Regular';
+font-size:12px;
+text-align:left;
+font-weight:300;
+}
+
+
+hr{
+margin:14px 0;
+}
+ .badge {
+    font-family: 'Formula1-Wide';
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+	position:absolute;
+top:29px;right:17px;
+        }
+
+        .number {
+    font-family: 'Formula1-Wide';
+            color: black;
+        }
+
+        .pts {
+            background: black;
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+        }
+.pts p{
+font-size:12px;
+    font-family: 'Formula1-Wide';
+            color: white;
+margin:0px;
+}
+.number p{
+text-align:right;
+font-size:18px;
+    font-family: 'Formula1-Wide';
+margin-bottom:-28px;
+}
+
+
+.garismiring{
+width:100%;
+height:14vh;
+background-image: linear-gradient(135deg, #ffffff 20%, #f4f4f4 20%, #f4f4f4 50%, #ffffff 50%, #ffffff 70%, #f4f4f4 70%, #f4f4f4 100%);
+background-size: 14.14px 14.14px;
+margin:1300px 0 30px 0;
+}
+
+nav{
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+}
+
+.kiri{
+}
+.kiri img{
+margin-bottom:-5px;
+}
+.kiri a{
+font-family: 'Formula1-Regular';
+font-size:12px;
+font-weight:800;
+text-decoration:none;
+color:#999;
+padding:10px;
+margin-top:20px;
+}
+.kiri .active{
+color:black;
+position:relative;
+}
+.desktop-item::after {
+            content: "";
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            transform: rotate(45deg) translateY(-5px);
+            margin-left: 8px;
+        }
+.kiri .active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%; /* Position below the link */
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid red; /* This makes the triangle point down */}
+
+.vertical-line {
+  border-left: 1px solid lightgrey; /* Adjust color */
+  height: 20px;
+  margin: 0 5px;
+  display: inline-block;
+margin-bottom:-5px;
+
+}
+
+nav .toko{
+  background: white;
+  position: relative;
+  padding: 0px 30px;
+  height: 49px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .wrapper{
+  background: red;
+  position: relative;
+  padding: 0px 30px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.toko .nav-links{
+  display: inline-flex;
+}
+.wrapper .logo a{
+  text-decoration: none;
+color:white;
+}
+.wrapper .nav-links{
+  display: inline-flex;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 550;
+  padding:26px 20px;
+font-family: 'Formula1-Regular';
+}
+.nav-links li a:hover{
+  background: #15151E;
+}
+.nav-links .mobile-item{
+  display: none;
+}
+.nav-links .drop-menu{
+  position: absolute;
+  background: #242526;
+  width: 180px;
+  line-height: 45px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box{
+  transition: all 0.3s ease;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+.drop-menu li a{
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+.mega-box{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+.mega-box .content{
+  background: #242526;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.mega-box .content .row{
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+.content .row img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .row header{
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: 500;
+}
+.content .row .mega-links{
+  margin-left: -40px;
+  border-left: 1px solid rgba(255,255,255,0.09);
+}
+.row .mega-links li{
+  padding: 0 20px;
+}
+.row .mega-links li a{
+  padding: 0px;
+  padding: 0 20px;
+  color: #d9d9d9;
+  font-size: 17px;
+  display: block;
+}
+.row .mega-links li a:hover{
+  color: #f2f2f2;
+}
+.wrapper .btn{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.wrapper .btn.close-btn{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+nav input{
+  display: none;
+}
+
+.body-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 0 30px;
+}
+.body-text div{
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.leaderboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        .card {
+            width: 360px;
+            height: 420px;
+            position: relative;
+            transition: all 0.3s;
+            text-align: left;
+            padding: 15px 15px 0 0;
+            overflow: hidden;
+	    font-family: 'Formula1-Regular', sans-serif;
+        }
+
+        .border-effect {
+            width: 99%;
+            height: 96%;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            border-radius: 0 11px 0 0;
+            transition: 0.2s;
+            position: absolute;
+            bottom: 0px	;
+            left: 0;
+        }
+
+        .card:hover .border-effect {
+	    height:98%
+        }
+.card:hover .redbull{
+            border-top: 2px solid blue;
+            border-right: 2px solid blue;
+}
+.card:hover .mercedes{
+            border-top: 2px solid cyan;
+            border-right: 2px solid cyan;
+}
+.card:hover .mclaren{
+            border-top: 2px solid orange;
+            border-right: 2px solid orange;
+}
+.card:hover .ferrari{
+            border-top: 2px solid red;
+            border-right: 2px solid red;
+}
+.card:hover .rb{
+            border-top: 2px solid royalblue;
+            border-right: 2px solid royalblue;
+}
+
+        .card img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .driver {
+            width: 80%;
+            max-width: 200px;
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+        }
+
+        .card h2 {
+            font-family: 'Formula1-Bold', Arial, sans-serif;
+            font-size: 20px;
+            margin: 10px 0;
+            text-transform: uppercase;
+        }
+
+        .card .nomor {
+            position: absolute;
+            bottom: 4px;
+            left: -27px;
+            width: 150px;
+            	
+        }
+.marketplace{
+margin-top:-6px;
+}
+	.marketplace a{
+text-decoration: none;
+margin:0 8px;
+ color:white;
+padding:6px 0px;
+font-size:10px;
+font-weight:bold
+	}
+	.marketplace img{
+width:110px;
+position:relative;
+margin-bottom:-12px;
+margin-right:-8px;
+margin-left:4px;
+}
+
+.marketplace .linkkecil{
+color:black;
+font-family: calibri;
+font-size:13px;
+text-align:left;
+font-weight:600;
+border-radius:none
+padding:0px;
+}
+
+.marketplace .linkkecil:hover{
+color:red;
+border-bottom:3px solid red;
+
+}
+        .flag {
+	    float:right;
+            width: 46px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+
+        .team {
+    font-family: 'Formula1-Regular';
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+	    font-weight:400;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+
+.garismiring{
+height:60vh;
+}
+  .wrapper .btn{
+    display: block;
+  }
+  .wrapper .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #242526;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+  }
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked ~ .nav-links{
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn{
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn{
+    display: block;
+  }
+  .nav-links li{
+    margin: 15px 10px;
+  }
+  .nav-links li a{
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+  .nav-links .drop-menu{
+    position: static;
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+    padding-left: 20px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  .nav-links .desktop-item{
+    display: none;
+  }
+  .nav-links .mobile-item{
+    display: block;
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-links .mobile-item:hover{
+    background: #3A3B3C;
+  }
+  .drop-menu li{
+    margin: 0;
+  }
+  .drop-menu li a{
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .mega-box{
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .mega-box .content{
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+  .mega-box .content .row{
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .mega-box .content .row:nth-child(1),
+  .mega-box .content .row:nth-child(2){
+    border-top: 0px;
+  }
+  .content .row .mega-links{
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  .row .mega-links li{
+    margin: 0;
+  }
+  .content .row header{
+    font-size: 19px;
+  }
+nav .toko{
+display:none;
+}
+            .leaderboard {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+		width:100%;
+                height: 200px	;
+            }
+
+            .card h2 {
+                font-size: 24px;
+            }
+
+            .card .nomor {
+                width:120px;
+                padding: 4px 8px;
+            }
+
+            .driver {
+                width: 54%;
+                bottom: -10px;
+            }
+ .flag {
+            position: absolute;
+            right: 16px;
+            width: 30px;}
+        }
