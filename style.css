@@ -439,11 +439,12 @@ border-bottom:3px solid red;
 	    font-weight:400;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-
+@media screen and (max-width: 768px) {
 .garismiring{
-height:60vh;
+height:720px;
+}
+
+.judul h2{font-size:80%;
 }
   .wrapper .btn{
     display: block;
@@ -573,7 +574,7 @@ display:none;
 
             .card {
 		width:100%;
-                height: 200px	;
+                height: 280px	;
             }
 
             .card h2 {
@@ -592,5 +593,6 @@ display:none;
  .flag {
             position: absolute;
             right: 16px;
-            width: 30px;}
-        }
+            width: 30px;
+}
+}
