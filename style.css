@@ -442,9 +442,10 @@ border-bottom:3px solid red;
 @media screen and (max-width: 768px) {
 .garismiring{
 height:900px;
+	margin-top:10vh
 }
 
-.judul h2{font-size:80%;
+.judul h2{font-size:80%;;
 }
   .wrapper .btn{
     display: block;
